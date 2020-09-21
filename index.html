@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ollive Player</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./static/style/style.css">
+        <link rel="shortcut icon" href="./static/images/Logos/OnlyWhiteOlivaLogo.png" type="image/x-icon">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header block">
+                <div class="header__brand">
+                    <img src="./static/images/Logos/OnlyWhiteOlivaLogo.png" alt="Logo" class="header__brand--logo">
+                    <div class="brand">
+                        <p class="header__brand--name color">Ollive</p>
+                        <p class="header__brand--slogan color">Player.</p>
+                    </div>
+                </div>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__list--item"><a href="#home" class="item color">Home</a></li>
+                        <li class="navigation__list--item"><a href="#player" class="item color">Player</a></li>
+                    </ul>
+                    <i class="icofont-navigation-menu"></i>
+                </nav>
+            </div>
+            <div class="header background without-padding">
+                <div class="blured"></div>
+            </div>
+        </header>
+        <div class="separate"></div>
+        <main class="container">
+            <section class="content first flexed__display" id="home">
+                <div class="welcome__message">
+                    <h1 class="welcome__message--title">Welcome</h1>
+                    <p class="welcome__message--info">
+                        This is an attempt at a <strong> <a href="#player">Player</a></strong> for web pages.
+                    </p>
+                </div>
+                <img src="./static/images/ilustrations/undraw_Login_re_4vu2.svg" alt="Welcome image" class="welcome__image">
+            </section>
+            <section class="content player flexed__display">
+                <div class="controler flexed__display">
+                    <img id="img-album" src="./static/images/Logos/OnlyBlackOlivaLogo.png" alt="Caratula del Disco" class="controler__data--disc">
+                    <audio src="" class="controler__data--player" id="player" controls>Player</audio>
+                </div>
+                <div class="controler flexed__display list">
+                    <ul class="song__list" id="playlist">
+                        <!-- <li class="song__list--item">cancion</li>
+                        <li class="song__list--item">cancion</li> -->
+                    </ul>
+                    <button class="shuffle" id="shuffle">Shuffle</button>
+                </div>
+            </section>
+        </main>
+        <!-- <script src="./src/jquery.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="./src/main.js"></script>
+    </body>
+    </html>

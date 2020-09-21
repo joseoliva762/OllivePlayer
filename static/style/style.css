@@ -1,0 +1,283 @@
+:root{
+    --black: #000000;
+    --darkBlue: #14213D;
+    --yellow: #FCA311;
+    --neutralGrey: #E5E5E5;
+    --white: #ffffff;
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    color: var(--black);
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    margin: 0px;
+    width: 100%;
+    background-color: var(--black);
+}
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+strong a:hover{
+    color: #FCA311;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+.header {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    left: 0px;
+    overflow: hidden;
+    padding: 5px 3%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    transition: 0.25s;
+    width: 100%;
+}
+.header__brand {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__brand--logo {
+    margin-right: 10px;
+    width: 50px;
+}
+.brand {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: center;
+}
+.header__brand--name {
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+    height: 38px;
+    text-align: center;
+    width: 100%;
+}
+.header__brand--name:hover {
+    color: var(--darkBlue);
+    transform: scale(1.05);
+    /* -webkit-text-stroke: 1px var(--white); */
+}
+.header__brand--slogan{
+    display: block;
+    font-size: 12px;
+    padding: 0 0 0 5px;
+    text-align: left;
+    width: 100%;
+}
+.navigation__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation__list--item {
+    list-style: none;
+    margin-right: 15px;
+}
+.item {
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+}
+.item:hover{
+    color: var(--yellow);
+    text-decoration: underline;
+}
+.separate {
+    height: 80px;
+    width: 100%;
+}
+.block {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.background {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 900;
+}
+.blured {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-image: url("https://ep01.epimg.net/elpais/imagenes/2019/10/30/album/1572424649_614672_1572453030_noticia_normal.jpg"); */
+    /* filter: blur(10px); */
+    height: 200%;
+    width: 200%;
+    z-index: 900;
+}
+.without-padding {
+    padding: 0;
+}
+.container {
+    /* position: absolute; */
+    background-color: var(--black);
+    height: 100%;
+    z-index: 0;
+}
+.content {
+    background-color: var(--neutralGrey);
+    /* border-bottom: 1px solid var(--yellow); */
+    height: 100%;
+    width: 100%;
+}
+.first {
+    background-color: var(--black);
+    color: var(--white);
+}
+.flexed__display {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.welcome__message {
+    width: 40%;
+    margin: 0 30px;
+}
+.welcome__message--title {
+    font-size: 10em;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+.welcome__message--title:hover{
+    color: var(--yellow);
+    transform: scale(1.05);
+    -webkit-text-stroke: 1px var(--darkBlue);
+}
+.welcome__message--info {
+    text-align: center;
+    width: 100%;
+}
+.sticky {
+    background-color: var(--white);
+    color: var(--black);
+}
+.color {
+    color: var(--white);
+}
+.none{
+    display: none;
+}
+.controler {
+    flex-direction: column;
+    margin: 0 40px 0 0; 
+}
+.controler__data--disc {
+    border-radius: 8px;
+    height: 300px;
+    margin-bottom: 3px;
+    width: 300px;
+}
+.controler__data--player {
+    background-color: var(--black);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+.controler__data--player > button{
+    background-color: #FCA311;
+}
+.list {
+    filter: grayscale(50%);
+    min-height: 300px;
+    margin: 0;
+    /* overflow: hidden; */
+    width: 50%;
+}
+.list:hover{
+    filter: grayscale(0%);
+}
+.song__list {
+    /* background-image: url("https://ep01.epimg.net/elpais/imagenes/2019/10/30/album/1572424649_614672_1572453030_noticia_normal.jpg"); */
+    border: 0.1px solid var(--black);
+    border-radius: 8px;
+    color: var(--black);
+    list-style: none;
+    height: 100%;
+    margin: 0 0 2px 0;
+    min-height: 300px;
+    padding: 20px;
+    width: 100%;
+}
+.song__list--item {
+    border-bottom: 0.1px solid var(--black);
+    cursor: pointer;
+    margin-top: 10px;
+    min-height: 30px;
+    padding: 0 10px;
+    width: 100%;
+}
+.song__list--item:hover{
+    color: var(--yellow);
+    font-weight: bold;
+}
+.shuffle {
+    background-color: var(--black);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+    min-height: 45px;
+    width: 100%;
+    transition: 0.2s;
+}
+.shuffle:hover{
+    background-color: var(--yellow);
+    color: var(--white);
+    cursor: pointer;
+}
+
+@media(max-width: 968px ){
+    .welcome__message--title {
+        font-size: 5em;
+    }
+    .welcome__image {
+        display: none;
+    }
+}
+@media(max-width: 768px ){
+    .welcome__message--title {
+        font-size: 2.5em;
+    }
+    .header {
+        padding: 5px 5%;
+    }
+    .welcome__message{
+        margin: 0;
+        width: 90%;
+    }
+    .welcome__message--info{
+        font-size: 12px;
+    }
+    .player {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .controler {
+        margin: 20px 0;
+    }
+    .list {
+        width: 300px;
+    }
+}

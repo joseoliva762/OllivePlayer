@@ -1,0 +1,39 @@
+{
+    "songs": [
+        {
+            "id": 0,
+            "name": "Best of You",
+            "artist": "Foo Fighter",
+            "song": "static/audio/BestOfYou.mp3",
+            "image": "static/simages/front/BestOfYou.jpg"
+        },
+        {
+            "id": 1,
+            "name": "Black",
+            "artist": "Pearl Jam",
+            "song": "static/audio/Black.mp3",
+            "image": "static/images/front/Black.jpg"
+        },
+        {
+            "id": 2,
+            "name": "El Selenita",
+            "artist": "Leon Bruno",
+            "song": "static/audio/ElSelenita.mp3",
+            "image": "static/images/front/ElSelenita.jpg"
+        },
+        {
+            "id": 3,
+            "name": "El Tatuaje de la Redención",
+            "artist": "Leon Bruno",
+            "song": "static/audio/ElTatuajedelaRedención.mp3",
+            "image": "static/images/front/ElTatuajedelaRedención.jpg"
+        },
+        {
+            "id": 4,
+            "name": "The Pretender",
+            "artist": "Foo Fighter",
+            "song": "static/audio/ThePretender.mp3",
+            "image": "static/images/front/ThePretender.jpg"
+        }
+    ]
+}
